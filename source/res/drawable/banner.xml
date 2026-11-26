@@ -1,0 +1,1 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"><item android:drawable="@drawable/wallpaper"/><item android:width="90dp" android:height="90dp" android:gravity="center" android:drawable="@drawable/icon"/></layer-list>

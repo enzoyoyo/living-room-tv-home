@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.livingroom.tvhome" android:versionCode="3" android:versionName="1.1.1">
+ <queries>
+  <intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LEANBACK_LAUNCHER"/></intent>
+  <intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent>
+  <intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.HOME"/></intent>
+ </queries>
+ <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="32"/>
+ <uses-feature android:name="android.software.leanback" android:required="false"/>
+ <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+ <application android:label="Living Room TV" android:icon="@drawable/icon" android:banner="@drawable/banner" android:theme="@android:style/Theme.Material.NoActionBar" android:allowBackup="false" android:supportsRtl="true" android:hardwareAccelerated="true" android:directBootAware="true" android:defaultToDeviceProtectedStorage="true">
+  <activity android:directBootAware="true" android:name=".MainActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" android:excludeFromRecents="true">
+   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.HOME"/><category android:name="android.intent.category.DEFAULT"/></intent-filter>
+   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LEANBACK_LAUNCHER"/><category android:name="android.intent.category.LAUNCHER"/><category android:name="android.intent.category.DEFAULT"/></intent-filter>
+  </activity>
+ </application>
+</manifest>
